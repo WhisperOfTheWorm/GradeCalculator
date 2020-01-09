@@ -62,7 +62,7 @@ function calculateGradeNeeded(){
     var wantedPartFinal = ((getPageGrade - curPartFinal) / getPageWeight) * 100;
     //var giveFinalGrade = getPageGrade - cGrade / (getPageWeight / 100);
     if(wantedPartFinal <-200){
-        document.getElementById("f1").innerHTML = "You probably don't want to use a number that low.";
+        document.getElementById("f1").innerHTML = "You probably don't want to use a number that low in the grades box.";
     } else {
         if(isNaN(wantedPartFinal)){
             document.getElementById("f1").innerHTML = "Error, All Weight Values do not add up to 100. Or you entered an illegitimate value for 'Grade(s)'";
